@@ -23,7 +23,7 @@ def embellish(array):
             processed_elem = ", " + processed_elem
 
         result += os.linesep + processed_elem
-    return "(" + result + os.linesep + ")"
+    return "IN (" + result + os.linesep + ")"
 
 def to_collection(string):
     return string.split(os.linesep)
