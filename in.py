@@ -1,5 +1,6 @@
 import sys
 import pyperclip
+import os
 
 def embellish(array):
     all_numbers = True
@@ -21,11 +22,11 @@ def embellish(array):
         else:
             processed_elem = ", " + processed_elem
 
-        result += "\n" + processed_elem
-    return result
+        result += os.linesep + processed_elem
+    return "(" + result + os.linesep + ")"
 
 def to_collection(string):
-    return string.split("\r\n")
+    return string.split(os.linesep)
 
 def is_number(s):
     try:
